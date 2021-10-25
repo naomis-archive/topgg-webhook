@@ -14,8 +14,8 @@ import fetch from "node-fetch";
     app.post(
       "/votes",
       topgg.listener(async (payload) => {
-        const message = `Hey <@!${payload.user}>! Thanks for voting for Gaea on Top.gg!`;
-        const reminder = `Hey <@!${payload.user}>! It's time to vote for Gaea on Top.gg again! Vote here: <https://top.gg/servers/431481677445988362>`;
+        const message = `Thank you for providing offerings <@!${payload.user}>. You have now been granted additional permissions in the server within 12 hours and a special role that hoists you above all other level ranks! 🔥 Would you like to stop receiving these notifications? Head over to <#868554059974574180>, type and enter \`?unsubscribe\`.`;
+        const reminder = `Hello <@!${payload.user}>, it is time for you to vote on Top.GG and provide offerings for the hearth. Vote for the server at: <https://top.gg/servers/431481677445988362>`;
 
         await fetch(process.env.WH_URL as string, {
           method: "POST",
@@ -41,6 +41,7 @@ import fetch from "node-fetch";
               content: reminder,
             }),
           });
+          // 12 hours
         }, 1000 * 60 * 60 * 12);
       })
     );
