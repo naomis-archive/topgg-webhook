@@ -24,6 +24,10 @@ import fetch from "node-fetch";
           },
           body: JSON.stringify({
             content: message,
+            // eslint-disable-next-line camelcase
+            allowed_mentions: {
+              parse: [],
+            },
           }),
         });
 
