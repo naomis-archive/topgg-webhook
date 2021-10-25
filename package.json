@@ -1,6 +1,6 @@
 {
   "name": "topgg-webhook",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A basic webserver for topgg reminders",
   "main": "./prod/index.ts",
   "scripts": {
