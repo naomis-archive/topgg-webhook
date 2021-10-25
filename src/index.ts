@@ -15,7 +15,7 @@ import fetch from "node-fetch";
       "/votes",
       topgg.listener(async (payload) => {
         const message = `Hey <@!${payload.user}>! Thanks for voting for Gaea on Top.gg!`;
-        const reminder = `Hey <@!${payload.user}>! It's time to vote for Gaea on Top.gg again! Vote here: `;
+        const reminder = `Hey <@!${payload.user}>! It's time to vote for Gaea on Top.gg again! Vote here: <https://top.gg/servers/431481677445988362>`;
 
         await fetch(process.env.WH_URL as string, {
           method: "POST",
