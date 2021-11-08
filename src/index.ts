@@ -15,7 +15,7 @@ import fetch from "node-fetch";
       "/votes",
       topgg.listener(async (payload) => {
         const message = `Thank you for providing offerings <@!${payload.user}>. You have now been granted additional permissions in the server within 12 hours and a special role that hoists you above all other level ranks! 🔥 Would you like to stop receiving these notifications? Head over to <#868554059974574180>, type and enter \`?unsubscribe\`.`;
-        const reminder = `Hello <@!${payload.user}>, it is time for you to vote on Top.GG and provide offerings for the hearth. Vote for the server at: <https://top.gg/servers/431481677445988362>`;
+        const reminder = `Hello <@!${payload.user}>, it is time for you to vote on Top.GG and provide offerings for the hearth. Vote for the server at: <https://top.gg/servers/431481677445988362/vote>`;
 
         await fetch(process.env.WH_URL as string, {
           method: "POST",
